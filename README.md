@@ -32,11 +32,21 @@ update Run
 
 ## BUILD
 
+本项目仅支持linux操作系统。
+
 ```shell
-git clone https://github.com/LadissonLai/Finite-State-Machine.git
-
-
+git clone https://github.com/LadissonLai/FSM.git
+cd FSM
+mkdir build
+cd build
+cmake ..
+make
+./fsm
 ```
+
+## Extention
+
+扩展新的状态，只需要继承include/BaseState.h类，然后在任意状态(idle, walk, run)添加切换条件change_state即可。
 
 
 
